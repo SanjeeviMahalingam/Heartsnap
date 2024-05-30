@@ -1,0 +1,84 @@
+{
+  "modelName": "master3_d_object_model",
+  "name": "Heart",
+  "identifier": "master3_d_object_model:121341-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+  "sourceIdentifier": "asset_collection_model:121345-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+  "animationMask": {
+    "position": false,
+    "rotation": false,
+    "scale": false
+  },
+  "cameraVisibility": "back|front",
+  "depth": 0.027098398655653,
+  "globalScaleFactor": 1,
+  "height": 0.044229064136743546,
+  "hidden": false,
+  "layerIdentifier": "layer0",
+  "outputVisibility": "preview|capture",
+  "physicsEnabled": false,
+  "tags": [],
+  "transform": {
+    "rx": 0,
+    "ry": 0,
+    "rz": 0,
+    "sx": 1,
+    "sy": 1,
+    "sz": 1,
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "width": 0.04994170740246773,
+  "children": [
+    {
+      "modelName": "mesh",
+      "name": "Heart",
+      "identifier": "mesh:121331-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+      "animationMask": {
+        "position": false,
+        "rotation": false,
+        "scale": false
+      },
+      "cameraVisibility": "back|front",
+      "castShadow": false,
+      "hidden": false,
+      "layerIdentifier": "layer0",
+      "nodeName": "Heart",
+      "numberOfFaces": 60,
+      "outputVisibility": "preview|capture",
+      "physicsEnabled": false,
+      "prefabIdentifier": "gltf:121335-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+      "receiveShadow": false,
+      "renderPass": "main_scene",
+      "tags": [],
+      "transform": {
+        "rx": 0,
+        "ry": 0,
+        "rz": 0,
+        "sx": 1,
+        "sy": 1,
+        "sz": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "useEmbeddedBlendshapes": false,
+      "children": [
+        {
+          "modelName": "surfaces",
+          "identifier": "surfaces:121333-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+          "children": [
+            {
+              "modelName": "surface",
+              "name": "surface0",
+              "identifier": "surface:121338-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+              "isMaterialIdentifierEnabled": true,
+              "materialIdentifier": "dependent_metallic_roughness_p_b_r_material_model:121329-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+              "surfaceGroupIdentifier": "121339-3a0cb2fe-f342-44e5-abc0-c0607fdece02"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

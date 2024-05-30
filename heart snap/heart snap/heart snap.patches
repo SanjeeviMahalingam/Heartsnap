@@ -1,0 +1,184 @@
+{
+  "id": "1210303a0cb2fef34244e5abc0c0607fdece02",
+  "revision": "1489413a0cb2fef34244e5abc0c0607fdece02",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 180
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "windows",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 180
+  },
+  "visual_programming": {
+    "connections": [
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:123919-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPatch": "template_patch_model:123915-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPort": "101",
+        "toPatch": "template_patch_model:123917-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "toPort": "2"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:123921-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPatch": "template_patch_model:123917-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPort": "100",
+        "toPatch": "producer_patch_model:123913-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "toPort": "100"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:124279-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPatch": "producer_patch_model:123913-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPort": "1001",
+        "toPatch": "template_patch_model:124099-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "toPort": "101"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:124281-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPatch": "template_patch_model:124099-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPort": "1001",
+        "toPatch": "consumer_patch_model:124097-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "toPort": "101"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:145390-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPatch": "template_patch_model:145388-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPort": "100",
+        "toPatch": "consumer_patch_model:127479-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "toPort": "101"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:145392-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPatch": "producer_patch_model:123913-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "fromPort": "1001",
+        "toPatch": "template_patch_model:145388-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "toPort": "1"
+      }
+    ],
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:121118-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "subpatches": [
+          "consumer_patch_model:124097-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+          "consumer_patch_model:127479-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+          "producer_patch_model:123913-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+          "template_patch_model:123915-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+          "template_patch_model:123917-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+          "template_patch_model:124099-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+          "template_patch_model:145388-3a0cb2fe-f342-44e5-abc0-c0607fdece02"
+        ]
+      }
+    ],
+    "patches": [
+      {
+        "modelName": "consumer_patch_model",
+        "name": "Heart",
+        "identifier": "consumer_patch_model:124097-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "object": "master3_d_object_model:122040-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "objectProperty": "visible",
+        "position": [
+          1076,
+          164
+        ],
+        "values": [
+          {
+            "port": "101",
+            "value": {
+              "t": "bool",
+              "v": false
+            }
+          }
+        ]
+      },
+      {
+        "modelName": "consumer_patch_model",
+        "name": "3dText0",
+        "identifier": "consumer_patch_model:127479-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "object": "text_extrusion_model:127262-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "objectProperty": "visible",
+        "position": [
+          908,
+          236
+        ],
+        "values": [
+          {
+            "port": "101",
+            "value": {
+              "t": "bool",
+              "v": true
+            }
+          }
+        ]
+      },
+      {
+        "modelName": "producer_patch_model",
+        "name": "faceTracker0",
+        "identifier": "producer_patch_model:123913-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "object": "facetracker:121834-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "position": [
+          404,
+          68
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Face Finder",
+        "identifier": "template_patch_model:123915-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "position": [
+          -4,
+          92
+        ],
+        "templateId": "builtin.faceTracker"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Face Select",
+        "identifier": "template_patch_model:123917-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "position": [
+          164,
+          92
+        ],
+        "templateId": "builtin.facePicker",
+        "values": [
+          {
+            "port": "1",
+            "value": {
+              "t": "int",
+              "v": 0
+            }
+          }
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Mouth Open",
+        "identifier": "template_patch_model:124099-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "position": [
+          932,
+          68
+        ],
+        "templateId": "builtin.group.mouthOpen"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Smile",
+        "identifier": "template_patch_model:145388-3a0cb2fe-f342-44e5-abc0-c0607fdece02",
+        "position": [
+          692,
+          212
+        ],
+        "templateId": "builtin.smile"
+      }
+    ]
+  }
+}
